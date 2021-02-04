@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    min-height: 600px;
+}
+
+#parent .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 100px;
+}
+
+#colorParent p{
+  background: black;
+  padding: 20px 10px;
+  font-size: 25px;
+  font-family: tahoma;
+  width: 400px;
+  color: red;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#clockParent{
+    width: 350px;
+    height: 350px;
+    background: rgb(223, 215, 205);
+    border-radius: 50%;
+}
+
+
+
+
+.clockAnalog {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url("../images/clock2.png");
+    background-size: contain;
+    background-position: center center;
+    position: relative;
+    box-shadow: inset 0 0 50px 1px #79e6f5, 1px 1px 25px #fff; }
+    .clockAnalog .second {
+      width: 4px;
+      height: 130px;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      margin-left: -2px;
+      transform-origin: bottom;
+      background: black;
+      box-shadow: 0px 40px 0.5px #030202;
+      z-index: 3;
+      border-radius: 15px; }
+    .clockAnalog .minute {
+      width: 5px;
+      height: 110px;
+      background: #66034d;
+      position: absolute;
+      left: 50%;
+      margin-left: -2.5px;
+      bottom: 50%;
+      z-index: 2;
+      transform-origin: bottom;
+      border-radius: 10px; }
+    .clockAnalog .hour {
+      width: 6px;
+      height: 110px;
+      background: #0834c4;
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      margin-left: -3px;
+      z-index: 1;
+      transform-origin: bottom;
+      border-radius: 20px; }
+    .clockAnalog .center {
+      width: 10px;
+      height: 10px;
+      background: red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -5px 0 0 -5px;
+      border-radius: 100%;
+      z-index: 6;
+      box-shadow: 1px 1px 15px #f83a00; }
+  
